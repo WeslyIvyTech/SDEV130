@@ -1,0 +1,27 @@
+Main Module
+    Call Input Module
+    Call Process Module
+    Call Output Module
+End Main Module
+
+Input Module
+    Prompt "Enter the refrigerator model name:"
+    Get modelName
+    Prompt "Enter the interior height in inches:"
+    Get heightInches = 60
+    Prompt "Enter the interior width in inches:"
+    Get widthInches = 30
+    Prompt "Enter the interior depth in inches:"
+    Get depthInches = 24
+End Input Module
+
+Process Module
+    Set cubicInches = heightInches (60) * widthInches (30) * depthInches (24)
+    Set CUBIC_INCHES_PER_CUBIC_FOOT = 1728
+    Set capacityCubicFeet = cubicInches (43200) / CUBIC_INCHES_PER_CUBIC_FOOT (1728)
+End Process Module
+
+Output Module
+    Print "Refrigerator Model: " modelName
+    Print "Capacity: " + capacityCubicFeet + " cubic feet" (25)
+End Output Module

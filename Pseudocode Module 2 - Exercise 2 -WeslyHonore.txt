@@ -1,0 +1,39 @@
+Main Module
+    Call Housekeeping Module
+    Call Input Module
+    Call Process Module
+    Call Output Module
+    Call End Program Module
+End Main Module
+
+Start Program
+Housekeeping Module
+    Set accountBalance = 0
+    Set overDrawnFee = 0
+End Housekeeping Module
+
+Input Module
+    Prompt "Enter the account balance:"
+    Get accountBalance
+    Prompt "Enter the number of times the account was overdrawn:"
+    Get timesOverdrawn
+End Input Module
+
+Process Module
+    Set overDrawnFee = (0.01 * accountBalance) - (5 * timesOverdrawn)
+    If overDrawnFee < 0 Then
+        Set overDrawnFee = 0
+    End If
+    Set newAccountBalance = accountBalance - overDrawnFee
+End Process Module
+
+Output Module
+    Print "The fee calculated is: $" + overDrawnFee
+    Print "The new account balance is: $" + newAccountBalance
+    Print "Thanks for using this program"
+End Output Module
+
+End Program Module
+    Print "Program has ended."
+    Stop
+End End Program Module
