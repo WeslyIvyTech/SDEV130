@@ -1,0 +1,82 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
+  <diagram name="Page-1" id="8-qI8iUNCv2tnIP4cM6L">
+    <mxGraphModel dx="463" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="v2ILFtmvY50MkUoZNbYE-2" target="v2ILFtmvY50MkUoZNbYE-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-2" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="210" y="50" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-3" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1380" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="v2ILFtmvY50MkUoZNbYE-4" target="v2ILFtmvY50MkUoZNbYE-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-4" value="&lt;div&gt;input&lt;/div&gt;&lt;div&gt;CustomerName&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;rounded=1;arcSize=12;size=0.23;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="180" y="150" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="v2ILFtmvY50MkUoZNbYE-6" target="v2ILFtmvY50MkUoZNbYE-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-6" value="costBathrooms = numBathroomsCleaned * 15" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="155" y="450" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="v2ILFtmvY50MkUoZNbYE-8" target="v2ILFtmvY50MkUoZNbYE-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-8" value="input&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;numBathroomsCleaned&lt;/span&gt;&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;rounded=1;arcSize=12;size=0.23;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="360" y="230" width="175" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="v2ILFtmvY50MkUoZNbYE-12" target="v2ILFtmvY50MkUoZNbYE-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-12" value="input&lt;div&gt;numOtherRoomsCleaned&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;rounded=1;arcSize=12;size=0.23;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="140" y="320" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="v2ILFtmvY50MkUoZNbYE-16" target="v2ILFtmvY50MkUoZNbYE-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-16" value="costOtherRooms = numOtherRooms * 10" style="whiteSpace=wrap;html=1;rounded=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="360" y="560" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-20" value="totalCost = 40 + costBathrooms + costOtherRooms" style="whiteSpace=wrap;html=1;rounded=1;arcSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="165" y="690" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="v2ILFtmvY50MkUoZNbYE-20" target="v2ILFtmvY50MkUoZNbYE-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="255" y="850" as="sourcePoint" />
+            <mxPoint x="255" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="v2ILFtmvY50MkUoZNbYE-25" target="v2ILFtmvY50MkUoZNbYE-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-25" value="output&lt;div&gt;customerName&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;rounded=1;arcSize=12;size=0.23;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="20" y="880" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-30" value="output&lt;div&gt;numBathrooms and costBathrooms&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;rounded=1;arcSize=12;size=0.23;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="230" y="970" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="v2ILFtmvY50MkUoZNbYE-33" target="v2ILFtmvY50MkUoZNbYE-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-33" value="output&lt;div&gt;numOtherRooms and costOtherRooms&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;rounded=1;arcSize=12;size=0.23;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1100" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-35" value="output&lt;div&gt;totalCost&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;rounded=1;arcSize=12;size=0.23;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1240" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.453;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="v2ILFtmvY50MkUoZNbYE-33" target="v2ILFtmvY50MkUoZNbYE-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v2ILFtmvY50MkUoZNbYE-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="v2ILFtmvY50MkUoZNbYE-35" target="v2ILFtmvY50MkUoZNbYE-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
