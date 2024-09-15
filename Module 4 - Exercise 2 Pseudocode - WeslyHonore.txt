@@ -1,0 +1,13 @@
+
+1. Start
+2. Set `word_to_find` ("logic")
+3. Set `current_word` to the word found on the current page ("juice" on first random page)
+4. WHILE `current_word` is not equal to `word_to_find` DO:
+    a. IF `current_word` is alphabetically before the `word_to_find` THEN:
+            Flip forward to the next page
+            Update `current_word` to the word found on the new page
+    b. ELSE IF `current_word` is alphabetically after the `word_to_find` THEN:
+            Flip backward to the previous page
+            Update `current_word` to the word found on the new page
+5. Print "Word found: logic"
+6. End

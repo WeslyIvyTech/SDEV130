@@ -1,0 +1,16 @@
+
+1. Start
+2. Set `number_to_guess` = (1,100)
+3. Set `player_guess` = 0
+4. WHILE `player_guess` is not equal to `number_to_guess` DO:
+    a. Prompt player to enter their guess
+    b. Read the player's input and store it in `player_guess`
+    c. IF `player_guess` > `number_to_guess` THEN:
+           Print( "Your guess is too high!")
+    d. ELSE IF `player_guess` < `number_to_guess` THEN:
+           Print("Your guess is too low!")
+    e. ELSE:
+           Print("Congratulations! You guessed the correct number!")
+5. End
+
+
