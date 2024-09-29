@@ -1,0 +1,27 @@
+
+Structured approach to planning the game:
+1. Define the Game Structure:
+Categories: 6 categories in total.
+Questions per Category: 5 questions per category (30 questions total).
+Point Values: Each question has point values ranging from 100 to 500, increasing with difficulty.
+2. Game Flow:
+Players: Set the number of players (3 contestants).
+Scoreboard: Implement a tracking system to display and update each player’s score.
+Timer: Set a 30-second time limit for answering each question. Ensure the timer resets for each new question.
+Gameboard: Display all categories with available point values on a gameboard.
+Category and Point Selection: Players choose a category and point value.
+Question Display: Display the selected clue/question associated with the category and point value.
+Contestant Response: Capture the contestant’s response, verifying that it is phrased in the form of a question (e.g., "What is...").
+3. Error Handling:
+If no response is given within the time limit, move to the next contestant.
+Ensure only one contestant answers at a time, and prevent others from interrupting.
+4. Score Calculation:
+Correct Answer: Add the point value to the contestant’s score.
+Incorrect Answer: Deduct the point value from the contestant’s score and allow other contestants to respond.
+After all contestants have responded or no response is given, move to the next question.
+5. Game Ending:
+The game continues until all 30 questions have been answered.
+Final Jeopardy (optional): Contestants wager points and answer a final question.
+6. Roles:
+Contestant: Answers questions by selecting categories and point values.
+Moderator: Manages the game, including revealing questions, timing answers, verifying correctness, and updating scores.
