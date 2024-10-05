@@ -1,0 +1,65 @@
+START
+    SET sentinel_value = -1
+    SET total_customers = 0
+    SET customer_list = EMPTY
+
+    WHILE True
+        PRINT "Enter the customer's area code (3 digits) or enter -1 to stop:"
+        INPUT area_code
+        
+        IF area_code == sentinel_value THEN
+            BREAK
+        END IF
+        
+        PRINT "Enter the customer's phone number (7 digits):"
+        INPUT phone_number
+        
+        PRINT "Enter total number of text messages sent:"
+        INPUT total_messages
+        
+        SET base_fee = 5
+        SET cost = base_fee
+        
+        IF total_messages > 300 THEN
+            SET cost = cost + ((total_messages - 300) * 0.02) + (200 * 0.03)
+        ELSE IF total_messages > 100 THEN
+            SET cost = cost + ((total_messages - 100) * 0.03)
+        END IF
+        
+        SET tax = cost * 0.14
+        SET total_bill = cost + tax
+        
+        ADD (area_code, phone_number, total_messages, cost, total_bill) TO customer_list
+         
+        PRINT "Customer Data: Area Code =", area_code, "Phone Number =", phone_number
+        PRINT "Total messages sent:", total_messages
+        PRINT "Bill before tax:", cost
+        PRINT "Bill after tax:", total_bill
+        
+    END WHILE
+    
+    PRINT "Customers who sent over 100 text messages:"
+    FOR EACH customer IN customer_list
+        IF customer.total_messages > 100 THEN
+            DISPLAY customer details
+        END IF
+    END FOR
+    
+    PRINT "Customers whose total bill exceeds $10:"
+    FOR EACH customer IN customer_list
+        IF customer.total_bill > 10 THEN
+            DISPLAY customer details
+        END IF
+    END FOR
+    
+    PRINT "Enter area code to display bills from that area:"
+    INPUT search_area_code
+    
+    PRINT "Customers with area code:", search_area_code
+    FOR EACH customer IN customer_list DO
+        IF customer.area_code == search_area_code THEN
+            DISPLAY customer details
+        END IF
+    END FOR
+
+END
