@@ -1,0 +1,79 @@
+// This program merges fundraising records from Homeroom A and Homeroom B.
+// Each record contains the student's name and the contribution amount.
+// The merged file will display all contributions together, sorted by amount.
+
+start
+   Declarations
+      string HomeroomAName
+      num HomeroomAValue
+      string HomeroomBName
+      num HomeroomBValue
+      string bothFilesDone = "N"
+      num HIGH_VALUE = 999999
+      InputFile HomeroomAFile
+      InputFile HomeroomBFile
+      OutputFile mergedFile
+   getReady()
+   
+   
+   while bothFilesDone = "N"
+      detailLoop()
+      checkBoth()  
+   endwhile
+   
+   allDone()
+stop
+
+getReady()  
+   
+   open HomeroomAFile "HomeroomAFile.dat"
+   open HomeroomBFile "HomeroomBFile.dat"
+   open mergedFile "mergedFile.dat"
+   
+   
+   readHomeroomA()
+   readHomeroomB()
+return
+
+readA()
+   
+   if NOT eof(HomeroomAFile) then
+      input HomeroomAName, HomeroomAValue from HomeroomAFile
+   else
+      HomeroomAValue = HIGH_VALUE  
+   endif
+return
+
+readHomeroomB()
+   
+   if NOT eof(HomeroomBFile) then
+      input HomeroomBName, HomeroomBValue from HomeroomBFile
+   else
+      HomeroomBValue = HIGH_VALUE
+   endif
+return
+
+checkBoth()
+   
+   if HomeroomAValue = HIGH_VALUE AND HomeroomBValue = HIGH_VALUE then
+      bothFilesDone = "Y"
+   endif
+return
+
+detailLoop()
+   
+   if HomeroomAValue > HomeroomBValue then
+      output HomeroomBName, HomeroomBValue to mergedFile
+      readHomeroomB()  
+   else
+      output HomeroomAName, HomeroomAValue to mergedFile
+      readHomeroomA() 
+   endif
+return
+ 
+allDone()
+   
+   close HomeroomAFile
+   close HomeroomBFile
+   close mergedFile
+return
